@@ -1,0 +1,19 @@
+/*Screen less than 767px*/
+@media only screen and (max-width: 767px){
+    .nav-right{
+        display: none;
+    }
+    .hamburger{
+        display: flex;
+    }
+    .offer{
+        margin: 5px;
+    }
+}
+
+/*Screen more than 768px*/
+@media only screen and (min-width: 768px){
+    .offer-3{
+        margin-top: 21px;
+    }
+}

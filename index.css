@@ -1,0 +1,251 @@
+/*Common CSS*/
+img{
+    width: 100%;
+}
+section{
+    margin: 10px 0;
+}
+.wrapper{
+    position: relative;
+}
+a, a:hover{
+    text-decoration: none;
+    color: unset;
+}
+/*Common CSS Ends Here*/
+
+
+
+
+/*Nav Bar CSS Start Here*/
+nav.nav-bar {
+    height: 70px;
+    background: #fff;
+    box-shadow: 0 2px 6px 0 #919191;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 999;
+    position: sticky;
+    top: 0;
+}
+.nav-bar .container {
+    display: flex;
+    justify-content: space-between;
+}
+.nav-right {
+    display: flex;
+    align-items: center;
+    font-family: Open Sans;
+}
+.nav-right div {
+    margin-left: 25px;
+}
+nav.nav-links ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+}
+nav.nav-links ul li {
+    margin-left: 20px;
+    font-weight: 500;
+    font-size: 14px;
+}
+.signup-btn, .login-btn {
+    padding: 5px 13px;
+    background: #83AFE1;
+    display: inline-block;
+    color: #fff;
+    font-weight: 500;
+    font-size: 14px;
+    margin-left: 4px;
+}
+.login-btn {
+    background: #fff;
+    color: #83AFE1;
+}
+.shop-cart-icon{
+    width: 20px;
+    margin-right: 5px;
+}
+.hamburger {
+    display: none;
+    align-items: center;
+}
+.hamburger .stick {
+    width: 25px;
+    height: 2px;
+    border-radius: 5px;
+    background: #aaa;
+    display: block;
+    margin-bottom: 3px;
+    transform-origin: 5px 1px;
+    transition: 0.2s all ease-in;
+}
+.hamburger.close .stick3 {
+    transform: rotate(-45deg);
+    transition: 0.2s all ease-in;
+}
+.hamburger.close .stick1 {
+    transform: rotate(45deg);
+    transition: 0.2s all ease-in;
+}
+.hamburger.close .stick:nth-child(2){
+    visibility: hidden;
+    transition: 0.2s all ease-in;   
+}
+.mobile-nav {
+    top: 80px;
+    position: absolute;
+    background: #fff;
+    max-width: 320px;
+    min-width: 300px;
+    left: 50%;
+    transform: translate(-50%, -350px);
+    padding: 20px;
+    transition: 0.2s all ease-in;
+    z-index: 999;
+}
+.mobile-nav.down{
+    transform: translate(-50%, 0px);
+    transition: 0.2s all ease-in;
+}
+.bg-overlay {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #000;
+    opacity: 0.5;
+    display: none;
+    z-index: 888;
+}
+.bg-overlay.show{
+    display: block;
+}
+.mobile-nav ul li {
+    margin: 18px 0;
+    font-weight: 600;
+}
+.mobile-nav ul {
+    list-style: none;
+    display: block;
+    text-align: center;
+    padding: 0;
+    margin: 10px 0;
+}
+.mobile-nav div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 35px;
+}
+.mobile-nav .login-btn{
+    background: #83AFE1;
+    color: #fff;
+}
+/*Nav Bar CSS Ends Here*/
+
+
+
+/*Extra Offer CSS Starts Here*/
+.extra-offer .row{
+    height: 100%;
+}
+/*Extra Offer CSS Ends Here*/
+
+
+/*New Arrival CSS Starts Here*/
+.new-arrival h1{
+    font-size: 34px;
+    margin-top: 20px;
+}
+.product-img{
+    position: relative;
+}
+.product-detail{
+    padding: 10px;
+}
+.product-detail span {
+    background: #f0f5fb;
+    padding: 2px 7px;
+    font-size: 11px;
+}
+.product-detail p {
+    font-size: 16px;
+    margin: 0;
+    font-weight: 700;
+    color: #ff5151;
+}
+.product-detail h4 {
+    font-size: 14px;
+    margin: 0;
+    margin-top: 10px;
+}
+.product-card {
+    border: 1px solid #000;
+    margin: 10px 0;
+}
+.cart-btn, .buy-btn {
+    background: #fff;
+    padding: 5px 10px;
+    color: #000;
+    border-bottom: 3px solid #ff5151;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 11px;
+}
+.buy-btn{
+    border-bottom: 3px solid #82aee1;
+    margin-left: 10px;
+}
+.cart-btn:hover{
+    background-color: #ff5151;
+    color: #fff;
+    transition: 0.2s ease-in all;
+}
+.buy-btn:hover{
+    background-color: #82aee1;
+    color: #fff;
+    transition: 0.2s ease-in all;    
+}
+.cart-btn:hover img, .buy-btn:hover img{
+    filter: invert(1);
+    transition: 0.2s ease-in all;
+}
+.action-btns img{
+    width: 15px;
+    margin-right: 2px;
+}
+.action-btns {
+    opacity: 0;
+    position: absolute;
+    bottom: 10px;
+    transition: 0.2s ease-in all;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+.product-card:hover .action-btns{
+    opacity: 1;
+}
+.product-card:hover .img-overlay{
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.6;
+    position: absolute;
+    transition: 0.2s ease-in all;
+}
+a.shop-btn {
+    display: block;
+    padding: 10px 20px;
+    border: 2px solid #333;
+    font-weight: 500;
+    margin: 10px auto;
+    width: fit-content;
+}
+/*New Arrival CSS Ends Here*/
