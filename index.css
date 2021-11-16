@@ -12,6 +12,10 @@ a, a:hover{
     text-decoration: none;
     color: unset;
 }
+ul{
+    list-style: none;
+    padding: 0;
+}
 /*Common CSS Ends Here*/
 
 
@@ -249,3 +253,119 @@ a.shop-btn {
     width: fit-content;
 }
 /*New Arrival CSS Ends Here*/
+
+
+
+/*Newsletter CSS Starts Here*/
+section.newsletter .bg {
+    background: #83afe2;
+    padding: 40px 20px;
+    border-radius: 5px;
+    margin: 30px 0;
+}
+section.newsletter h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+}
+.email-input{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.email-input input {
+    min-width: 200px;
+    width: 280px;
+    border: none;
+    padding: 8px;
+}
+.email-input input:focus{
+    outline:none;
+}
+.email-input span{
+    background: #ff5151;
+    padding-right: 20px;
+    padding-left: 20px;
+    display: inline-block;
+}
+.email-input span img{
+    width: 20px;
+    height: 100%;
+    object-fit: contain;
+}
+/*Newsletter CSS Ends Here*/
+
+
+
+/*Footer CSS Starts Here*/
+.footer {
+    background: #FBFCFE;
+    padding: 30px 10px;
+    font-family: open sans;
+}
+.footer-logo {
+    font-size: 20px;
+    margin: 20px 0;
+}
+.info li:first-child, .com li:first-child {
+    font-size: 18px;
+    font-weight: 600;
+}
+.info, .com{
+    margin-bottom: 40px;
+}
+.info li, .com li {
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+.footer .newsletter {
+    background: #F0F2F8;
+    padding: 18px;
+}
+.footer .newsletter h2 {
+    font-size: 18px;
+    font-weight: 600;
+}
+.footer .email-input input {
+    min-width: 130px;
+    border: none;
+    padding: 8px;
+    font-size: 9px;
+}
+.email-input span{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.email-input span img{
+    width: 10px;
+}
+.footer .newsletter p {
+    font-size: 12px;
+    margin-top: 10px;
+}
+.footer .email-input{
+    justify-content: left;
+}
+ul.terms li {
+    margin-right: 25px;
+    font-weight: 500;
+}
+ul.terms {
+    display: flex;
+}
+ul.social {
+    display: flex;
+    justify-content: right;
+}
+ul.social li {
+    width: 30px;
+    margin-left: 10px;
+}
+.sec-footer, .pri-footer{
+    padding: 20px 0;
+}
+.sec-footer{
+    border-top: 1px solid #ddd;
+}
+/*Footer CSS Ends Here*/

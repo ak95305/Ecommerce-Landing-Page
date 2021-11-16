@@ -9,6 +9,12 @@
     .offer{
         margin: 5px;
     }
+    .footer .email-input{
+        justify-content: center;
+    }
+    ul.social, ul.terms{
+        justify-content: center;
+    }
 }
 
 /*Screen more than 768px*/
